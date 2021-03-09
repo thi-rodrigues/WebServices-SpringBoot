@@ -8,5 +8,6 @@ public class WebServicesSpringBootJpaHibernateApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebServicesSpringBootJpaHibernateApplication.class, args);
+		
 	}
 }
