@@ -1,4 +1,4 @@
-package com.demo.service;
+package com.demo.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.demo.entities.User;
 import com.demo.repository.UserRepository;
+import com.demo.services.exception.ResourceNotFoundException;
 
 @Service
 public class UserService {
@@ -21,7 +22,7 @@ public class UserService {
 	
 	public User findById(Long id) {
 		Optional<User> findById = userRepository.findById(id);
-		return findById.get();
+		return findById.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	public User save(User user) {

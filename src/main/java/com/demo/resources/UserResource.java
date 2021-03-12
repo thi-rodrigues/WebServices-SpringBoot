@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.entities.User;
-import com.demo.service.UserService;
+import com.demo.services.UserService;
 
 @RestController
 @RequestMapping("/users")

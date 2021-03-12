@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.entities.Order;
-import com.demo.service.OrderService;
+import com.demo.services.OrderService;
 
 @RestController
 @RequestMapping("/orders")
